@@ -1,0 +1,93 @@
+@import url("reset.css");
+
+//border-box
+* { box-sizing: border-box; }
+
+
+body{
+  line-height: 1.5;
+}
+li{
+  list-style: none;
+ }
+
+
+
+//carousel
+.jumbotron{
+  display: flex;
+  justify-content: center;
+}
+.carousel {
+    display:flex;
+    .carousel-image {
+      height: 40vmax;
+      width: 80vmax;
+    }
+     button {
+      border: none;
+      height: 40vmax;
+    }
+  }
+//end carousel
+
+//navbar
+.nav-center-container{
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+  li{
+    display: inline;  
+    cursor: pointer;  
+  }
+  .logo-item{
+    position: absolute;
+    left: 0;
+  }
+  .shopping-cart-item{
+    position: absolute;
+    right: 0;
+  }
+}
+//end navbar
+
+
+
+ .panel{
+  cursor: pointer;
+  text-align: center;
+ }
+
+ .map-ul{
+  cursor: pointer;
+ }
+
+.email-form-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.products-heading-container{
+  display: flex;
+  text-align: center;
+}
+
+.panel-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up-container{
+    display: flex;
+    text-align: center;
+}
