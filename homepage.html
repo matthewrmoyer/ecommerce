@@ -9,64 +9,54 @@
     <link rel="stylesheet" type="text/css" href="homepage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="homepagejs.js"></script>
-
+    <script src="homepagejs.js"></script>
     <style>
     </style>
   </head>
   <body>
     <nav class="navbar">
-    <ul class = "navbar-ul">
-      <li class = "logo-item">LOGO</li>
-
-      <div class = "nav-center-container">
-      <li class = "col-xs-4 nav-center-link">Products</li>
-      <li class = "col-xs-4 nav-center-link">Account</li>
-      <li class = "col-xs-4 nav-center-link">About</li>
-</div>
-
-      <li class = "shopping-cart-item">3 Items for Checkout <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-</li>
-
-    </ul>
+      <ul class = "navbar-ul">
+        <li class = "logo-item">Six Pack Delivery Co.</li>
+        <li class = "col-xs-4 nav-center-link"><a href="homepage.html">Home</a></li>
+        <li class = "col-xs-4 nav-center-link"><a href="product.html">Products</a></li>
+        <li class = "col-xs-4 nav-center-link"><a href="checkout.html">Checkout</a></li>
+        <li class = "shopping-cart-item">3 Items for Checkout <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </li>
+      </ul>
     </nav>
-
-
     <!--Carousel-->
     <div class = "jumbotron">
-    <div class="carousel">
-      <div class="buttons">
-        <button class="prev">
-       ◀
-        </button>
-      </div>
-      <ul class="items">
-        <li><img class="carousel-image" src="./1.png"></li>
-        <li><img class="carousel-image" src="./2.png"></li>
-        <li><img class="carousel-image" src="./3.png"></li>
-      </ul>
-      <div class="buttons">
-        <button class="next">
-         ▶
-        </button>
+      <div class="carousel">
+        <div class="buttons">
+          <button class="prev">
+          ◀
+          </button>
+        </div>
+        <ul class="items">
+          <li><img class="carousel-image" alt="Image" src="./1.png"></li>
+          <li><img class="carousel-image" alt="Image" src="./2.png"></li>
+          <li><img class="carousel-image" alt="Image" src="./3.png"></li>
+        </ul>
+        <div class="buttons">
+          <button class="next">
+          ▶
+          </button>
+        </div>
       </div>
     </div>
-    </div>
-
     <!--End Carousel-->
-
     <article>
       <div class="container products-heading-container">
         <h2 class = " col-xs-12 products-heading">Products</h2>
       </div>
-      <div classs = "container pane-container">
+      <div class = "container panel-container">
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading">Paul's Package</div>
-            <div class="panel-body panel-body-paul"><img src="./logo-n.png" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">A bunch of porters</div>
+            <div class="panel-body panel-body-paul"><img src="./logo-n.png" alt="Image" class="img-responsive" style="width:100%"></div>
+            <div class="panel-footer">Featuring New Holland</div>
             <div class="panel-footer-stars">
-            <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -76,8 +66,8 @@
         <div class="col-sm-4">
           <div class="panel panel-danger">
             <div class="panel-heading">Bill's Package</div>
-            <div class="panel-body"><img src="./logo-l.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">IPAs awww yeaaa</div>
+            <div class="panel-body"><img src="./logo-l.jpg" alt="Image" class="img-responsive" style="width:100%"></div>
+            <div class="panel-footer">Welcome to IPA Town</div>
             <div class="panel-footer-stars">
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -89,7 +79,7 @@
           <div class="panel panel-success">
             <div class="panel-heading">Ryan's Package</div>
             <div class="panel-body"><img src="./logo-t.png" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">Stouts all day </div>
+            <div class="panel-footer">Total Mixed Bag</div>
             <div class="panel-footer-stars">
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -100,50 +90,48 @@
           </div>
         </div>
       </div>
+    </article>
+    <div class = "container sign-up-container">
+      <div class = "col-xs-12">
+        <h3>Sign Up Today</h3>
+        <p>Get a fresh sixpack of craft beers delivered to your house each month. Select a package handpicked by our world-renowned connoissuers from around the country.
+        </p>
+      </div>
     </div>
-  </article>
-  <div class = "container sign-up-container">
-    <div class = "col-xs-12">
-      <h3>Sign Up Today</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      </p>
+    <div class = "container email-form-container">
+      <input class =  "col-xs-7" type="text" placeholder="Email" name="email-input" id = "email-form-input">
+      <input class = "col-xs-3" type="submit" name="email-submit" id = "email-form-submit">
     </div>
-  </div>
-  <div class = "container email-form-container">
-    <input class =  "col-xs-7" type="text" placeholder="Email" name="email-input" id = "email-form-input">
-    <input class = "col-xs-3" type="submit" name="email-submit" id = "email-form-submit">
-  </div>
-  <footer class="container-fluid text-center">
-    <h3 class= "footer-heading">Footer Heading</h3>
-    <div class = "container">
-      <ul class = "col-xs-3 map-ul">
-        <li>Map</li>
-        <li> <img class= "img-responsive" src="./map.png">
-        </li>
-      </ul>
-      <ul class = "col-xs-3 footer-ul">
-        <li>Col-Heading</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-      </ul>
-      <ul class = "col-xs-3 footer-ul">
-        <li>Col-Heading</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-      </ul>
-      <ul class = "col-xs-3 footer-ul">
-        <li>Col-Heading</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-        <li>Col-Link</li>
-      </ul>
+    <footer class="container-fluid text-center">
+      <h3 class= "footer-heading">Footer Heading</h3>
+      <div class = "container">
+        <ul class = "col-xs-3 map-ul">
+          <li>Map</li>
+          <li> <img class= "img-responsive" alt="Image" src="./map.png">
+          </li>
+        </ul>
+        <ul class = "col-xs-3 footer-ul">
+          <li>Col-Heading</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+        </ul>
+        <ul class = "col-xs-3 footer-ul">
+          <li>Col-Heading</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+        </ul>
+        <ul class = "col-xs-3 footer-ul">
+          <li>Col-Heading</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+          <li>Col-Link</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

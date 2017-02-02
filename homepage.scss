@@ -35,9 +35,6 @@ li{
   }
 //end carousel
 
-//navbar
-.nav-center-container{
-}
 
 .navbar{
   display: flex;
@@ -46,14 +43,20 @@ li{
   color: blue;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: darken($background-color, 30);
+  background-color: darken($background-color, 10);
+  height: 5vh;
+  .logo-item{
+    img{
+      height: 5vh;
+    }
+  }
 
 
   li{
     display: inline;  
     cursor: pointer;  
     color: $secondary-text-color;
-    
+
 
   }
   .logo-item{

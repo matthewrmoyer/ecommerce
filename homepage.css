@@ -29,7 +29,10 @@ li {
   color: blue;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #c1b083; }
+  background-color: #e3dbc7;
+  height: 5vh; }
+  .navbar .logo-item img {
+    height: 5vh; }
   .navbar li {
     display: inline;
     cursor: pointer;
