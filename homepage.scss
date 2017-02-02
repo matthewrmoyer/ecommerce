@@ -9,24 +9,22 @@ $nav-background-color: #2F2F2F;
 $footer-background-color: #2F2F2F;
 $carousel-height: 30vmax;
 
+
+//stock elements
 div{
   user-select: none;
 }
+
 body{
   line-height: 1.5;
   background-color: $background-color;
-
+  font-size: calc(10px + .5vmax);
 }
+
 li{
   list-style: none;
  }
-.panel{
-  box-shadow: 0 0 15px 0px black;
-  &:active{
-    box-shadow: inset 0 0 10px 0px black;
-  }
 
-}
 img{
   box-shadow:  0 0 10px 0px black;
   cursor: pointer;
@@ -35,41 +33,13 @@ img{
   }
 
 }
+//end stock elements
 
-//carousel
-.jumbotron{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-   box-shadow:  0 0 10px 0px black;
-}
-.carousel {
-    display:flex;
-     box-shadow:  0 0 10px 0px black;
-    &:active{
-    box-shadow: inset 0 0 3px 0px black;
-  }
-    .carousel-image {
-      height: $carousel-height;
-      width: 80vmax;
-    }
-     button {
-      border: none;
-      height: $carousel-height;
-      opacity: .5;
-      &:focus{
-        outline: none;
-      }
-    }
-  }
-//end carousel
-
-
+//navbar
 .navbar{
   //stock navbar from bootstrap has rounded corners
-    border-radius: 0;
+  border-radius: 0;
   border-bottom: solid 7px white;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,17 +56,15 @@ img{
     display: inline;  
     cursor: pointer;  
     color: lighten($secondary-text-color,40);
-        &:hover{
-    color: lighten($secondary-text-color, 60);
-  }
+    &:hover{
+      color: lighten($secondary-text-color, 60);
+    }
   a{
     &:hover{
       color: lighten($secondary-text-color, 60);
       text-decoration: none;
     }
   }
-
-
   }
   .logo-item{
     position: absolute;
@@ -109,47 +77,55 @@ img{
 }
 //end navbar
 
-
-
- .panel{
-  cursor: pointer;
-  text-align: center;
- }
-
- .map-ul{
-  cursor: pointer;
-  align-self: center;
- }
-
-.email-form-container{
+//carousel
+.jumbotron{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+   box-shadow:  0 0 10px 0px black;
 }
-#email-form-input{
-   box-shadow:  0 0 5px 0px black;
-   margin-right: 5px;
-    &:focus{
-        outline: none;
-        border: 1px solid green;
-      }
-}
-#email-form-submit{
-   box-shadow:  0 0 5px 0px black;
+
+.carousel {
+    display:flex;
+    box-shadow:  0 0 10px 0px black;
     &:active{
     box-shadow: inset 0 0 3px 0px black;
   }
+  .carousel-image {
+    height: $carousel-height;
+    width: 80vmax;
+  }
+  button {
+    border: none;
+    height: $carousel-height;
+    opacity: .5;
+    &:focus{
+      outline: none;
+    }
+  }
 }
+//end carousel
+
+
+//featured products
 .products-heading-container{
   display: flex;
   text-align: center;
 }
-
 .panel-container{
   display: flex;
   justify-content: space-around;
 }
+.panel{
+  box-shadow: 0 0 15px 0px black;
+  cursor: pointer;
+  text-align: center;
+  &:active{
+    box-shadow: inset 0 0 10px 0px black;
+  }
+}
+//end products
+
 
 .sign-up-container{
     display: flex;
@@ -157,19 +133,49 @@ img{
      box-shadow:  0 0 10px 0px black;
 }
 
+//form
+.email-form-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#email-form-input{
+  box-shadow:  0 0 5px 0px black;
+  margin-right: 5px;
+  &:focus{
+    outline: none;
+    border: 1px solid green;
+  }
+}
 
-footer {
+#email-form-submit{
+  box-shadow:  0 0 5px 0px black;
+  &:active{
+    box-shadow: inset 0 0 3px 0px black;
+  }
+}
+//end form
+
+//footer
+footer{
   background-color: $footer-background-color;
   color: lighten($secondary-text-color, 20);
   border-top: solid 7px white;
   .footer-ul-container{
-  display: flex;
-}
+    display: flex;
+  }
   li{
     cursor: pointer;
     &:hover{
-    color: lighten($secondary-text-color, 50);
+      color: lighten($secondary-text-color, 50);
+    }
   }
+  .map-ul{
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 10px;
   }
-
 }
+//end footer
+

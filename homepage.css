@@ -7,42 +7,17 @@ div {
 
 body {
   line-height: 1.5;
-  background-color: #F4F1E9; }
+  background-color: #F4F1E9;
+  font-size: calc(10px + .5vmax); }
 
 li {
   list-style: none; }
-
-.panel {
-  box-shadow: 0 0 15px 0px black; }
-  .panel:active {
-    box-shadow: inset 0 0 10px 0px black; }
 
 img {
   box-shadow: 0 0 10px 0px black;
   cursor: pointer; }
   img:active {
     box-shadow: inset 0 0 3px 0px black; }
-
-.jumbotron {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  box-shadow: 0 0 10px 0px black; }
-
-.carousel {
-  display: flex;
-  box-shadow: 0 0 10px 0px black; }
-  .carousel:active {
-    box-shadow: inset 0 0 3px 0px black; }
-  .carousel .carousel-image {
-    height: 30vmax;
-    width: 80vmax; }
-  .carousel button {
-    border: none;
-    height: 30vmax;
-    opacity: .5; }
-    .carousel button:focus {
-      outline: none; }
 
 .navbar {
   border-radius: 0;
@@ -72,13 +47,46 @@ img {
     position: absolute;
     right: 0; }
 
-.panel {
-  cursor: pointer;
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 0 10px 0px black; }
+
+.carousel {
+  display: flex;
+  box-shadow: 0 0 10px 0px black; }
+  .carousel:active {
+    box-shadow: inset 0 0 3px 0px black; }
+  .carousel .carousel-image {
+    height: 30vmax;
+    width: 80vmax; }
+  .carousel button {
+    border: none;
+    height: 30vmax;
+    opacity: .5; }
+    .carousel button:focus {
+      outline: none; }
+
+.products-heading-container {
+  display: flex;
   text-align: center; }
 
-.map-ul {
+.panel-container {
+  display: flex;
+  justify-content: space-around; }
+
+.panel {
+  box-shadow: 0 0 15px 0px black;
   cursor: pointer;
-  align-self: center; }
+  text-align: center; }
+  .panel:active {
+    box-shadow: inset 0 0 10px 0px black; }
+
+.sign-up-container {
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 10px 0px black; }
 
 .email-form-container {
   display: flex;
@@ -98,19 +106,6 @@ img {
   #email-form-submit:active {
     box-shadow: inset 0 0 3px 0px black; }
 
-.products-heading-container {
-  display: flex;
-  text-align: center; }
-
-.panel-container {
-  display: flex;
-  justify-content: space-around; }
-
-.sign-up-container {
-  display: flex;
-  text-align: center;
-  box-shadow: 0 0 10px 0px black; }
-
 footer {
   background-color: #2F2F2F;
   color: #7d7d7d;
@@ -121,5 +116,9 @@ footer {
     cursor: pointer; }
     footer li:hover {
       color: #c9c9c9; }
+  footer .map-ul {
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=homepage.css.map */
