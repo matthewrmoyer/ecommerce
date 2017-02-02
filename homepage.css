@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box; }
 
+div {
+  user-select: none; }
+
 body {
   line-height: 1.5;
   background-color: #F4F1E9; }
@@ -9,34 +12,59 @@ body {
 li {
   list-style: none; }
 
+.panel {
+  box-shadow: 0 0 15px 0px black; }
+  .panel:active {
+    box-shadow: inset 0 0 10px 0px black; }
+
+img {
+  box-shadow: 0 0 10px 0px black;
+  cursor: pointer; }
+  img:active {
+    box-shadow: inset 0 0 3px 0px black; }
+
 .jumbotron {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 0 10px 0px black; }
 
 .carousel {
-  display: flex; }
+  display: flex;
+  box-shadow: 0 0 10px 0px black; }
+  .carousel:active {
+    box-shadow: inset 0 0 3px 0px black; }
   .carousel .carousel-image {
-    height: 40vmax;
+    height: 30vmax;
     width: 80vmax; }
   .carousel button {
     border: none;
-    height: 40vmax; }
+    height: 30vmax;
+    opacity: .5; }
+    .carousel button:focus {
+      outline: none; }
 
 .navbar {
+  border-radius: 0;
+  border-bottom: solid 7px white;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #e3dbc7;
-  height: 5vh; }
+  font-size: calc(12px + .5vmax);
+  background-color: #2F2F2F;
+  height: 7vh; }
   .navbar .logo-item img {
     height: 5vh; }
   .navbar li {
     display: inline;
     cursor: pointer;
-    color: #4a4a4a; }
+    color: #b0b0b0; }
+    .navbar li:hover {
+      color: #e3e3e3; }
+    .navbar li a:hover {
+      color: #e3e3e3;
+      text-decoration: none; }
   .navbar .logo-item {
     position: absolute;
     left: 0; }
@@ -49,7 +77,8 @@ li {
   text-align: center; }
 
 .map-ul {
-  cursor: pointer; }
+  cursor: pointer;
+  align-self: center; }
 
 .email-form-container {
   display: flex;
@@ -57,19 +86,40 @@ li {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+#email-form-input {
+  box-shadow: 0 0 5px 0px black;
+  margin-right: 5px; }
+  #email-form-input:focus {
+    outline: none;
+    border: 1px solid green; }
+
+#email-form-submit {
+  box-shadow: 0 0 5px 0px black; }
+  #email-form-submit:active {
+    box-shadow: inset 0 0 3px 0px black; }
+
 .products-heading-container {
   display: flex;
   text-align: center; }
 
 .panel-container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .sign-up-container {
   display: flex;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 0 10px 0px black; }
 
 footer {
-  color: #4a4a4a; }
+  background-color: #2F2F2F;
+  color: #7d7d7d;
+  border-top: solid 7px white; }
+  footer .footer-ul-container {
+    display: flex; }
+  footer li {
+    cursor: pointer; }
+    footer li:hover {
+      color: #c9c9c9; }
 
 /*# sourceMappingURL=homepage.css.map */

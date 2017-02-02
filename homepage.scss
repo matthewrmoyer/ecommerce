@@ -5,7 +5,13 @@
 
 $background-color: #F4F1E9;
 $secondary-text-color: darken(#c9c9c9, 50);
+$nav-background-color: #2F2F2F;
+$footer-background-color: #2F2F2F;
+$carousel-height: 30vmax;
 
+div{
+  user-select: none;
+}
 body{
   line-height: 1.5;
   background-color: $background-color;
@@ -14,48 +20,81 @@ body{
 li{
   list-style: none;
  }
+.panel{
+  box-shadow: 0 0 15px 0px black;
+  &:active{
+    box-shadow: inset 0 0 10px 0px black;
+  }
 
+}
+img{
+  box-shadow:  0 0 10px 0px black;
+  cursor: pointer;
+    &:active{
+    box-shadow: inset 0 0 3px 0px black;
+  }
 
+}
 
 //carousel
 .jumbotron{
   display: flex;
   justify-content: center;
+  width: 100%;
+   box-shadow:  0 0 10px 0px black;
 }
 .carousel {
     display:flex;
+     box-shadow:  0 0 10px 0px black;
+    &:active{
+    box-shadow: inset 0 0 3px 0px black;
+  }
     .carousel-image {
-      height: 40vmax;
+      height: $carousel-height;
       width: 80vmax;
     }
      button {
       border: none;
-      height: 40vmax;
+      height: $carousel-height;
+      opacity: .5;
+      &:focus{
+        outline: none;
+      }
     }
   }
 //end carousel
 
 
 .navbar{
+  //stock navbar from bootstrap has rounded corners
+    border-radius: 0;
+  border-bottom: solid 7px white;
+
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: darken($background-color, 10);
-  height: 5vh;
+  font-size: calc(12px + .5vmax);
+  background-color: $nav-background-color;
+  height: 7vh;
   .logo-item{
     img{
       height: 5vh;
     }
   }
-
-
   li{
     display: inline;  
     cursor: pointer;  
-    color: $secondary-text-color;
+    color: lighten($secondary-text-color,40);
+        &:hover{
+    color: lighten($secondary-text-color, 60);
+  }
+  a{
+    &:hover{
+      color: lighten($secondary-text-color, 60);
+      text-decoration: none;
+    }
+  }
 
 
   }
@@ -79,6 +118,7 @@ li{
 
  .map-ul{
   cursor: pointer;
+  align-self: center;
  }
 
 .email-form-container{
@@ -86,7 +126,20 @@ li{
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
-
+}
+#email-form-input{
+   box-shadow:  0 0 5px 0px black;
+   margin-right: 5px;
+    &:focus{
+        outline: none;
+        border: 1px solid green;
+      }
+}
+#email-form-submit{
+   box-shadow:  0 0 5px 0px black;
+    &:active{
+    box-shadow: inset 0 0 3px 0px black;
+  }
 }
 .products-heading-container{
   display: flex;
@@ -95,15 +148,28 @@ li{
 
 .panel-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .sign-up-container{
     display: flex;
     text-align: center;
+     box-shadow:  0 0 10px 0px black;
 }
 
+
 footer {
-    color: $secondary-text-color;
+  background-color: $footer-background-color;
+  color: lighten($secondary-text-color, 20);
+  border-top: solid 7px white;
+  .footer-ul-container{
+  display: flex;
+}
+  li{
+    cursor: pointer;
+    &:hover{
+    color: lighten($secondary-text-color, 50);
+  }
+  }
 
 }
