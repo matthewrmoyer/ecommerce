@@ -9,6 +9,7 @@ $secondary-text-color: darken(#c9c9c9, 50);
 body{
   line-height: 1.5;
   background-color: $background-color;
+
 }
 li{
   list-style: none;
@@ -45,12 +46,15 @@ li{
   color: blue;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: darken($background-color, 30);
 
 
   li{
     display: inline;  
     cursor: pointer;  
     color: $secondary-text-color;
+    
+
   }
   .logo-item{
     position: absolute;
@@ -96,6 +100,7 @@ li{
     text-align: center;
 }
 
-footer{
+footer {
     color: $secondary-text-color;
+
 }

@@ -28,7 +28,8 @@ li {
   position: relative;
   color: blue;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  background-color: #c1b083; }
   .navbar li {
     display: inline;
     cursor: pointer;
@@ -68,4 +69,4 @@ li {
 footer {
   color: #4a4a4a; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=homepage.css.map */
